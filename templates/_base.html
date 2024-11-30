@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{% endblock %} | Hello, Django!</title>
+</head>
+<body>
+<header>
+  <a href="{% url 'pages:homepage' %}">Home</a> |
+  <a href="{% url 'pages:about-us' %}">About</a>
+</header>
+<h1>{% block header %}Hello, Django!{% endblock %}</h1>
+<main>
+  {% block main %}{% endblock %}
+</main>
+</body>
+</html>
